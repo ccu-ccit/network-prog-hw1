@@ -40,7 +40,7 @@ int main(){
     printf("%s\n",receiveMessage);
     // init print message for them to show immediately.
     fflush(stdout);
-    send(client_sock, "got message!", 64, 0);
+    send(client_sock, receiveMessage, 64, 0);
     }
 
     return 0;
